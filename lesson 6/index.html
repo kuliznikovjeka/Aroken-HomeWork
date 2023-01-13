@@ -1,0 +1,31 @@
+<!-- Каждый комментарий относится к вышестоящей строке -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- Кодировка - UTF-8-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Если пользователь откроет в браузере Explorer, то у него откроется самая новейшая версия -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Даёт возможность адаптировать сайт под любое устройство -->
+	<link rel="shortcut icon" href="1.jpg" type="image/x-icon">
+	<!-- Маленькая картинка в браузере на сайте рядом с его названием, рядом с title -->
+	<title>Урок 7</title>
+	<!-- Внутри тега Head не отображается информация для пользователя  -->
+</head>
+
+<body>
+	<picture>
+		<source media="(max-width: 500px)" srcset="https://picsum.photos/seed/picsum/300/300">
+		<source media="(max-width: 1000px)" srcset="https://picsum.photos/seed/picsum/500/500">
+		<img src="https://picsum.photos/seed/picsum/700/700" alt="Горы со скалой">
+	</picture>
+
+	<figure>
+		<img src="https://picsum.photos/id/237/700/700" alt=" Собака">
+		<figcaption>Милая собака смотрит в камеру</figcaption>
+	</figure>
+</body>
+
+</html>
