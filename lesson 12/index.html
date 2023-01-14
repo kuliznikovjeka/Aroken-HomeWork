@@ -1,0 +1,51 @@
+<!-- Каждый комментарий относится к вышестоящей строке -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- Кодировка - UTF-8-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Если пользователь откроет в браузере Explorer, то у него откроется самая новейшая версия -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Даёт возможность адаптировать сайт под любое устройство -->
+	<link rel="shortcut icon" href="1.jpg" type="image/x-icon">
+	<!-- Маленькая картинка в браузере на сайте рядом с его названием, рядом с title -->
+	<link rel="stylesheet" href="style.css">
+	<title>Урок 12</title>
+	<!-- Внутри тега Head не отображается информация для пользователя  -->
+</head>
+
+
+<body>
+	<form>
+		<br>
+		<label>Введите имя <input class="input"></label>
+		<br>
+		<br>
+		<label>Введите фамилию <input class="input"></label>
+		<br>
+		<br>
+		<label>Введите телефон <input type="tel" class="input"></label>
+		<br>
+		<br>
+		<label>Введите почту <input type="email" class="input"></label>
+		<br>
+		<br>
+		<label>Выберите дату и время <input type="datetime-local" class="input"></label>
+		<br>
+		<br>
+		<label>Выберите количество огурцов для доставки
+			<input type="radio" name="ogurets" class="input"> 1 огурец
+			<input type="radio" name="ogurets" class="input"> 2 огурца
+			<input type="radio" name="ogurets" class="input"> 3 огурца
+		</label>
+		<br>
+		<br>
+		<input type="submit" class="input">
+		<input type="reset" value="Очистить" class="input">
+	</form>
+
+</body>
+
+</html>

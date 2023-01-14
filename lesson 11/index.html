@@ -1,0 +1,53 @@
+<!-- Каждый комментарий относится к вышестоящей строке -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- Кодировка - UTF-8-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Если пользователь откроет в браузере Explorer, то у него откроется самая новейшая версия -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Даёт возможность адаптировать сайт под любое устройство -->
+	<link rel="shortcut icon" href="1.jpg" type="image/x-icon">
+	<!-- Маленькая картинка в браузере на сайте рядом с его названием, рядом с title -->
+	<link rel="stylesheet" href="style.css">
+	<title>Урок 11</title>
+	<!-- Внутри тега Head не отображается информация для пользователя  -->
+</head>
+
+<!--В action - помещается путь к сприпту, который будет её обрабатывать"  -->
+<!-- name - имя для формы, дожно быть единственное, скрипт использует для отправки на сервер под этим именем -->
+<!--  autocomplete - автозаполнение уже ранее заполненных данных / off/on-->
+<!-- select - поле для выбора, внутри него пишется option  - получается ВЫПАДАЮЩЕЕ МЕНЮ -->
+<!-- textarea - поле для ввода большого текста -->
+<!-- label - используется для связки с input, обращаемся чрез#, в input пишем id-->
+<!-- fieldset - поле для группировки-->
+<!-- legend - подпись для поле группировки (fieldset) -->
+
+<body>
+	<form>
+		<fieldset>
+			<legend>Ваши данные</legend>
+			<input name="Имя" class="input"> Ваше имя
+			<span style="padding-left: 30px;">Выберите город</span>
+			<select name="town" id="">
+				<option value="1">Ялта</option>
+				<option value="2">Москва</option>
+				<option value="3">Воронеж</option>
+				<option value="4">Питер</option>
+				<option value="5">Ухта</option>
+				<option value="6">Краснодар</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Данные вашего питомца</legend>
+			<input class="input"> Введите кличку питомца
+		</fieldset>
+		<button type="submit" class="button">Отправить</button>
+		<button type="reset">Очистить</button>
+	</form>
+
+</body>
+
+</html>
