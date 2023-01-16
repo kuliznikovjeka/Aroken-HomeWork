@@ -1,0 +1,29 @@
+@import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,600;0,700;0,800;0,900;1,700&family=Open+Sans:wght@400;600&display=swap");
+/*===============================================================================================*/
+
+body {
+	font-family: "Mulish", sans-serif;
+	font-size: 16px;
+}
+
+[class*="__container"] {
+	max-width: 1190px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.block {
+	padding: 300px;
+	// background: linear-gradient(#3333, #666), url("/1.jpg") center no-repeat;
+	// background-image: url("/1.jpg"); Если я оставляю бэкграунд имедж и отдельно записываю линейный градиент, то то что ниже - то и остается
+	// То есть линейный градиент перезаписывает фоновое изображение или наоборот, если поменять местами.
+	//Не понял, как отдельно записать, чтобы все работало,  подскажи?
+
+	// Если только вот так 	background: url("/1.jpg"), linear-gradient(#3333, #666);
+
+	background: url("/1.jpg"), linear-gradient(#3333, #666);
+	background-position: center;
+	background-repeat: no-repeat;
+	// background: url("/1.jpg") 50% / 300px 400px no-repeat, linear-gradient(#3333, #666);
+}

@@ -1,0 +1,28 @@
+@import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,600;0,700;0,800;0,900;1,700&family=Open+Sans:wght@400;600&display=swap");
+/*===============================================================================================*/
+
+body {
+	font-family: "Mulish", sans-serif;
+	font-size: 16px;
+}
+
+[class*="__container"] {
+	max-width: 1190px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.block {
+	padding: 20px;
+	color: red;
+	background-color: greenyellow;
+	width: 100px;
+	height: 100px;
+	bottom: 100px;
+	right: 50px;
+	position: fixed;
+}
+// Не понимаю как задать одновременно и слева позиционирование и справа
+// Нижний край элемента должен отступать от низа вьюпорта на 100 пикселей, правый - на 50 пикселей - сделал
+// А как мне левый край привязать к середине вьюпорта - не понимаю?

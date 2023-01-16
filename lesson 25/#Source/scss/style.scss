@@ -1,0 +1,25 @@
+@import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,600;0,700;0,800;0,900;1,700&family=Open+Sans:wght@400;600&display=swap");
+/*===============================================================================================*/
+
+body {
+	font-family: "Mulish", sans-serif;
+	font-size: 16px;
+}
+
+[class*="__container"] {
+	max-width: 1190px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.transform {
+	// margin: 200px 0 0 700px;
+	width: 100px;
+	height: 100px;
+	background-color: rgb(246, 219, 183);
+
+	//===============================
+
+	transform: translateX(10vw) rotate(-30deg);
+}
